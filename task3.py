@@ -12,3 +12,15 @@ etc.
 
 users = ["annie","betty","charles","doug","eddie","flon"]
 passwords = ["12345","password","iloveyou","mom","default","0"]
+
+x = input("Enter username: ")
+y = input("Enter password: ")
+if x in users:
+    for i in range(len(users)):
+        if x == users[i]:
+            if passwords[i] == y:
+                print("Username and password match")
+            else:
+                print("Try again")
+else:
+    print("Try again")
